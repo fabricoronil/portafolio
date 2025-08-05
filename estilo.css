@@ -446,3 +446,77 @@ h4 {
     flex-direction: column;
    }
 }
+
+.section-proyectos {
+    display: flex;
+    gap: 20px;
+
+    
+    justify-content: center;
+        align-items: center;
+}
+
+.container-proyectos {
+    width: 500px;
+    height: 350px;
+    border: 1px solid rgb(81, 249, 255);
+    
+    border-radius: 20px;
+    
+}   
+
+.container-proyectos-img {
+    width: 100%;
+    height: 200px;
+   
+}
+
+.container-proyectos-info button {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    margin-left: 36px;
+    background-color: rgb(81, 249, 255);
+    border-radius: 40px;
+    color: black;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.container-proyectos-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     border-radius: 20px;
+}
+
+.container-proyectos-info {
+    height: 100px;
+    width: 100%;
+}
+
+.container-proyectos-info span {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(81, 249, 255);
+    margin-left: 35px;
+    position: relative;
+    top: 15px;
+    
+
+}
+
+.container-proyectos-info p {
+    margin-top: 20px;
+    margin-left: 35px;
+
+}
+
+@media (max-width:768px) {
+    .section-proyectos {
+        flex-direction: column;
+        
+    }
+}
