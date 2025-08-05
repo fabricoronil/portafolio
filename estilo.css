@@ -9,13 +9,15 @@
         html {
             scroll-behavior: smooth;
             scrollbar-width: thin;
-            scrollbar-color: black white;
-            background-color: #1f1e1e;
+            scrollbar-color: rgb(0, 245, 255) black;
+            background: #262525;
+background: linear-gradient(90deg,rgba(38, 37, 37, 1) 0%, rgba(0, 0, 0, 1) 51%, rgba(41, 41, 41, 1) 100%);
+
         }
 
         nav {
             
-            background: rgb(20, 19, 19);
+            background: linear-gradient(135deg, black 0%, #1a1a1a 200%);;
             padding: 1rem 2rem;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             position: fixed;
@@ -51,7 +53,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, white, #888);
+            background: rgb(0, 245, 255);
             transition: width 0.3s ease;
         }
 
@@ -106,7 +108,7 @@
             left: 50%;
             width: 0;
             height: 2px;
-            background: white;
+            background: rgb(0, 245, 255);
             transition: all 0.3s ease;
             transform: translateX(-50%);
         }
@@ -217,11 +219,7 @@
         /* Parte del Section Inicio*/
 
 
-        .section-inicio img {
-            width: 250px;
-            height: 300px;
-            clip-path: circle();
-        }
+        
 
         section {
             padding: 6rem 5%;
@@ -252,5 +250,114 @@
 
         .btn {
             display: inline-block;
+            background-color: rgb(0, 245, 255);
+            color: black;
+            padding: .8rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: ease 0.2s;
             
         }
+
+        .btn:hover {
+            background-color: rgb(81, 249, 255) ;
+            transform: translateY(-3px);
+           
+        }
+
+        .section-inicio {
+             min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding-top: 5rem;
+        }
+
+        .container-inicio {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .container-inicio-txt {
+            flex: 1;
+        }
+
+         .container-inicio-txt h1 {
+            font-size: 3rem;
+            margin-bottom: .5rem;
+            font-weight: 700;
+        }
+
+        .container-inicio-txt h2 {
+            font-size: 1.5rem;
+            color: rgb(81, 249, 255);
+        }
+
+        .container-inicio-txt p {
+            margin-bottom: 1.5rem;
+            margin-top: .5rem;
+            font-size: 1.1rem;
+            max-width: 600px;
+        
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+             justify-content: center;
+            align-items: center;
+        }
+
+      .social-links a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.35rem;
+        border-radius: 50%;
+        transition: ease 0.3s;
+        background-color: black;
+        height: 40px;
+        width: 40px;
+      }
+
+      .social-links a:hover {
+            background-color:   rgb(81, 249, 255) ;
+            transform:  translateY(-3px);
+      }
+
+      .section-inicio img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid rgb(81, 249, 255);
+            box-shadow: 0 0 25px rgb(81, 249, 255);
+            transition: ease 0.2s;
+        }
+
+        .section-inicio img:hover {
+            transform: scale(1.03);
+            box-shadow:  0 0 30px rgb(81, 249, 255);;
+        }
+
+.container-estudio {
+    position: relatives;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid red0;
+    margin-bottom: 20px;
+}
+
+.container-estudio:before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 20px;
+    width: 2px;
+    height: 40px;
+    background-color: rgb(81, 249, 255);
+}
+

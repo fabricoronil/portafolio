@@ -1,0 +1,19 @@
+En este txt, ire agregando los commits que realice hacia el servidor de github. Esta carpeta me servira para ir anotando los cambios que voy realizando dentro del comit.
+
+comit #1 :  navresponsive, estilo general de la web
+En este primer comit. presento el navresponsive desarrollado, y ya organice mas o menos mi idea de como va a ser el estilo de la web, ya aplicando la tipografia y los colores. Tambien ya arme la estructura semantica del HTML.
+
+comit #2:
+
+descripcion:
+-cambio de color a azul en el after en los nav-links
+
+
+
+comit #3:
+
+comit #4
+
+comit #5
+
+comit #6
