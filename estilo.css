@@ -818,3 +818,15 @@ footer {
         margin-top: 10px;
     }
 }
+
+#sobremi, #presentacion, #contacto {
+  scroll-margin-top: 200px;
+}
+
+#estudio {
+    scroll-margin-top: 100px;
+}
+
+#proyectos {
+    scroll-margin-top: 200px;
+}
