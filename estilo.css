@@ -817,6 +817,10 @@ footer {
     .porta {
         margin-top: 10px;
     }
+    .section-sobremi {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 #sobremi, #presentacion, #contacto {
