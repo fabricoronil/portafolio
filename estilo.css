@@ -222,7 +222,6 @@ background: linear-gradient(90deg,rgb(17, 17, 17) 0%, rgba(0, 0, 0, 1) 51%, rgb(
         
 
         section {
-            padding: 4rem 0;
             max-width: 1400px;
             margin: 0 auto;
 
@@ -274,9 +273,12 @@ background: linear-gradient(90deg,rgb(17, 17, 17) 0%, rgba(0, 0, 0, 1) 51%, rgb(
             align-items: center;
             justify-content: center;
             padding-top: 5rem;
+            padding: 2rem 0;
+            
         }
 
         .container-inicio {
+            margin-top: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -358,6 +360,107 @@ background: linear-gradient(90deg,rgb(17, 17, 17) 0%, rgba(0, 0, 0, 1) 51%, rgb(
             box-shadow:  0 0 30px rgb(81, 249, 255);;
         }
 
+        .section-presentacion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+.container-presentacion {
+    width: 480px;
+    height: 170px;
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    background: linear-gradient(-45deg, 
+        #51f9ff,  /* Cyan brillante */
+        #055e6f,  /* Blanco */
+        #51f9ff   /* Cyan brillante */
+    );
+    background-size: 400% 400%;
+    animation: gradient-shift 10s ease infinite;
+    
+    /* Mejoras adicionales */
+    box-shadow: 0 8px 32px rgba(81, 249, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Efecto hover opcional */
+.container-presentacion:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(81, 249, 255, 0.4);
+}
+
+ .container-presentacion p {
+        color: black;
+        font-weight: bold;
+        animation: colorani 10s ease infinite;
+        text-align: center;
+    }
+
+@keyframes colorani {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: white
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+/* Animación del gradiente lineal */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animación de rotación del gradiente cónico */
+@keyframes conic-rotation {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+
+@media (max-width: 768px) {
+    .container-presentacion {
+        width: 90%;
+        max-width: 400px;
+        height: 140px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-presentacion {
+        height: 120px;
+        border-radius: 25px;
+    }
+}
+
+   
+
+
 .estudio {
     display: flex;
     align-items: center;
@@ -369,8 +472,10 @@ background: linear-gradient(90deg,rgb(17, 17, 17) 0%, rgba(0, 0, 0, 1) 51%, rgb(
 .container-estudio {
     width: 80%;
     height: 60%;
-    border: 2px solid;
+    border: 1px solid;
     margin-top: 30px;
+
+      box-shadow: 0 8px 32px rgba(81, 249, 255, 0.3);
 }
 
 .section-title {
@@ -378,7 +483,8 @@ background: linear-gradient(90deg,rgb(17, 17, 17) 0%, rgba(0, 0, 0, 1) 51%, rgb(
 }
 
 .container-estudio {
-    background-color: black;
+    background-color:  rgb(6, 202, 209);
+
     border: 2px solid rgb(81, 249, 255);
     border-radius: 30px;
     display: flex;
@@ -386,6 +492,8 @@ background: linear-gradient(90deg,rgb(17, 17, 17) 0%, rgba(0, 0, 0, 1) 51%, rgb(
     padding: 1rem;
     align-items: center;
     text-align: center;
+
+    margin-bottom: 40px;
 }
 
 .container-estudio:hover {
@@ -411,8 +519,9 @@ background: linear-gradient(90deg,rgb(17, 17, 17) 0%, rgba(0, 0, 0, 1) 51%, rgb(
     font-weight: bold;
 }
 
-h4 {
-    margin-top: 50px;
+.container-estudio-titulo span{
+    font-weight: bold;
+    color: rgb(1, 73, 82);
 }
 
 
@@ -460,9 +569,12 @@ h4 {
     width: 500px;
     height: 350px;
     border: 1px solid rgb(81, 249, 255);
-    
+    background-color:  rgb(6, 202, 209);
     border-radius: 20px;
-    
+    padding: 0;
+    margin: 0;
+
+    box-shadow: 0 8px 32px rgba(81, 249, 255, 0.3);
 }   
 
 .container-proyectos-img {
@@ -478,7 +590,8 @@ h4 {
     margin-left: 36px;
     background-color: rgb(81, 249, 255);
     border-radius: 40px;
-    color: black;
+    color: rgb(1, 69, 71);
+    font-weight: bold;
     border: none;
     font-size: 20px;
     font-weight: bold;
@@ -500,7 +613,7 @@ h4 {
 .container-proyectos-info span {
     font-size: 35px;
     font-weight: bold;
-    color: rgb(81, 249, 255);
+    color: white(0, 0, 0);
     margin-left: 35px;
     position: relative;
     top: 15px;
@@ -511,6 +624,8 @@ h4 {
 .container-proyectos-info p {
     margin-top: 20px;
     margin-left: 35px;
+    color: white;
+    font-weight: bold;
 
 }
 
@@ -519,4 +634,13 @@ h4 {
         flex-direction: column;
         
     }
+
+    .container-proyectos {
+        width: 80%;
+        height: 370px;
+    }
+}
+
+h4 {
+    margin-top: 30px;
 }
