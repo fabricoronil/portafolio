@@ -459,6 +459,56 @@ background: linear-gradient(90deg,rgb(17, 17, 17) 0%, rgba(0, 0, 0, 1) 51%, rgb(
 }
 
    
+.section-sobremi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+
+.container-sobremi:hover {
+    transition: ease 0.2s;
+    transform: scale(1.04);
+   
+}
+
+.container-sobremi {
+    width: 80%;
+    height: 50px;
+    background-color: rgb(6, 202, 209);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+     box-shadow:  0 8px 32px rgba(81, 249, 255, 0.3); ;
+}
+
+.container-sobremi p {
+    margin-left: 40px;
+    position: relative;
+    
+}
+
+.container-sobremi p::before {
+    content: "";
+    display: flex;
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .estudio {
@@ -473,7 +523,7 @@ background: linear-gradient(90deg,rgb(17, 17, 17) 0%, rgba(0, 0, 0, 1) 51%, rgb(
     width: 80%;
     height: 60%;
     border: 1px solid;
-    margin-top: 30px;
+    margin-top: 5px;
 
       box-shadow: 0 8px 32px rgba(81, 249, 255, 0.3);
 }
